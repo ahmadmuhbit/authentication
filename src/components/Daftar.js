@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Daftar = () => {
     const[username,setUsername] = useState('');
@@ -38,7 +39,10 @@ const Daftar = () => {
                                     <label>Password</label>
                                     <input type="password" placeholder="Password" className="form-control" value={password} onChange={changePassword} />
                                 </div>
-                                <button className="btn btn-primary">Daftar</button>
+                                <button className="btn btn-primary">Daftar</button>{' '}
+                                 <Link to="/" className="btn btn-warning">
+                                     Batal
+                                </Link>
                             </div>
                         </div>
                     </div>
